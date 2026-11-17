@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Nostro Calendario dell'Avvento</title>
+    <!-- Font eleganti da Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Contenitore per i fiocchi di neve -->
+    <div id="snow-container" aria-hidden="true"></div>
+
+    <header class="hero">
+        <p class="subtitle">1 — 24 Dicembre</p>
+        <h1>Il Nostro Calendario dell'Avvento</h1>
+        <p class="intro">Ogni giorno una piccola sorpresa pensata solo per te.</p>
+    </header>
+
+    <main class="container">
+        <!-- La griglia delle 24 caselle verrà generata automaticamente da script.js -->
+        <div id="calendar-grid" class="calendar-grid"></div>
+    </main>
+
+    <!-- Finestra Modale (la sorpresa del giorno) -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal-card">
+            <button id="close-modal" class="close-btn" aria-label="Chiudi">&times;</button>
+            <div class="modal-header">
+                <span id="modal-day-label" class="day-badge">Giorno 1</span>
+                <h2 id="modal-title">Titolo Sorpresa</h2>
+            </div>
+            <div id="modal-body" class="modal-body">
+                <!-- Qui andranno testi, foto, video o mini-giochi -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fatto con ❤️ per te</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
